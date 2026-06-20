@@ -391,7 +391,7 @@ function calcAlk(){
     document.getElementById('alk-produkt-lbl').textContent='Zu hoch – Wasser teilweise ersetzen';
     return;
   }
-  const g=diff*vol*18;
+  const g=diff*vol*1.8;
   const w=fmtWeight(g);
   set('alk-out',w.val);
   document.getElementById('alk-unit').textContent=w.unit;
